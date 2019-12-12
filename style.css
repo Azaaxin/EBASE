@@ -1,15 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Alata|Changa&display=swap');
 body{
-	margin: 0px;
+    margin: 0px;
     background-color: #f8f8f8;
     min-width: 180px;
 }
-*{
-    transition: .3s;
-}
-.phone_menu li{
-    list-style: none;
-}
+*{transition: .3s;}
+.phone_menu li{list-style: none;}
 .phone_menu a{
     text-decoration: none;
     font-size: 25px;
@@ -23,12 +19,8 @@ span {
     margin: 6px 0;
     display: block;
 }
-input:focus, textarea:focus, select:focus{
-    outline: none;
-}
-textarea{
-    height:auto;
-}
+input:focus, textarea:focus, select:focus{outline: none;}
+textarea{height:auto;}
 /*FEED STARTS*/
 .title{
 	background-color: rgb(167, 167, 167);
@@ -36,16 +28,12 @@ textarea{
 }
 .content{
 	background-color: rgb(255, 255, 255);
-    padding: 20px;
-    
+    	padding: 20px;  
 }
-.wrapper{
-	background-color: #ff00ff;
-}
+.wrapper{background-color: #ff00ff;}
 .id{
 	float: right;
 	font-size: 10px;
-
 }
 .user{
     float: left;
@@ -55,23 +43,21 @@ textarea{
     border-radius: 5px 0px 0px 0px;
 }
 .post_wrapper{
-	margin: 0px 0px 30px 0px;
+    margin: 0px 0px 30px 0px;
     border: 3px solid rgb(255, 255, 255);
     border-radius: 5px;
     box-shadow: 0px 3px 20px 0px #00000014;
 }
 /*FEED ENDS*/
-
 /* GRID OBJECTS STARTS HERE */
 .grid-container {
-	display: grid;
+    display: grid;
 	/*grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.3fr 0.7fr 0.5fr;*/
     grid-template-columns: 230px 0.5fr 0.5fr 0.5fr 0.5fr 0.3fr 0.7fr 0.5fr;
 	
     grid-template-rows: 100px 0.6fr 0.5fr 0.5fr 0.5fr 0.5fr 100px;
-	grid-template-areas: "header header header header header header header header" "left_sidebar feed feed feed feed feed sidebar sidebar" "left_sidebar feed feed feed feed feed sidebar sidebar" "left_sidebar feed feed feed feed feed sidebar sidebar" "left_sidebar feed feed feed feed feed sidebar sidebar" "left_sidebar feed feed feed feed feed sidebar sidebar" "footer footer footer footer footer footer footer footer";
+    grid-template-areas: "header header header header header header header header" "left_sidebar feed feed feed feed feed sidebar sidebar" "left_sidebar feed feed feed feed feed sidebar sidebar" "left_sidebar feed feed feed feed feed sidebar sidebar" "left_sidebar feed feed feed feed feed sidebar sidebar" "left_sidebar feed feed feed feed feed sidebar sidebar" "footer footer footer footer footer footer footer footer";
 }
-  
 .header {
     display: grid;
     grid-template-columns: 1fr 1.3fr 0.7fr;
@@ -82,9 +68,8 @@ textarea{
     grid-area: header;
     background-color: #000e6599;
 }
-  
 .login { 
-	grid-area: login;
+    grid-area: login;
     font-family: 'Alata', sans-serif;
     color: white;
     font-size: 22px;
@@ -95,33 +80,27 @@ textarea{
     float: right;
     padding: 30;
 }
-.login a:focus{
-    margin-left: 40px;
-}
+.login a:focus{margin-left: 40px;}
 .logo {
     grid-area: logo;
     font-family: 'Changa', sans-serif;
     padding-left: 30px;
     color: rgb(248, 248, 255);
 }
-
 .feed { 
     grid-area: feed; 
     max-width: 900px;
 }
-  
 .footer {
-	grid-area: footer;
-	background-color: #1c1c1c; 
+    grid-area: footer;
+    background-color: #1c1c1c; 
 }
-
 .sidebar {
-	grid-area: sidebar;
+    grid-area: sidebar;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1.5fr 0.5fr;
 }
-  
 .left_sidebar { grid-area: left_sidebar; }
 /* GRID STOPS HERE */
 /*Login Form starts*/
@@ -143,14 +122,11 @@ textarea{
     transition: .2s;
     min-height: 50px;
 }
-.POST:focus{
-    min-height: 100px;
-}
+.POST:focus{min-height: 100px;}
 .submit_container{
     border-radius: 5px;
     background-color: #7a80b5;
     height: 29;
-    
 }
 .classy_submit {
     height: 30px;
@@ -171,40 +147,21 @@ textarea{
     cursor: pointer;
     z-index: 2000;
 }
-/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    .grid-container {
-        grid-template-areas: "header header header header header header header header" "feed feed feed feed feed feed feed feed" "feed feed feed feed feed feed feed feed" "feed feed feed feed feed feed feed feed" "feed feed feed feed feed feed feed feed" "feed feed feed feed feed feed feed feed" "footer footer footer footer footer footer footer footer";
-    }
+    .grid-container {grid-template-areas: "header header header header header header header header" "feed feed feed feed feed feed feed feed" "feed feed feed feed feed feed feed feed" "feed feed feed feed feed feed feed feed" "feed feed feed feed feed feed feed feed" "feed feed feed feed feed feed feed feed" "footer footer footer footer footer footer footer footer";}
     .sidebar {display:none;}
-      
     .left_sidebar { display:none; }
     .feed {padding:10px;}
     .login a {display:none;}
     .hamburger{display: block;}
 } 
 @media only screen and (min-width: 600px) and (max-width: 1200px) {
-    .grid-container {
-        grid-template-areas: "header header header header header header header header" "left_sidebar feed feed feed feed feed feed feed" "left_sidebar feed feed feed feed feed feed feed" "left_sidebar feed feed feed feed feed feed feed" "left_sidebar feed feed feed feed feed feed feed" "left_sidebar feed feed feed feed feed feed feed" "footer footer footer footer footer footer footer footer";
-}
+    .grid-container {grid-template-areas: "header header header header header header header header" "left_sidebar feed feed feed feed feed feed feed" "left_sidebar feed feed feed feed feed feed feed" "left_sidebar feed feed feed feed feed feed feed" "left_sidebar feed feed feed feed feed feed feed" "left_sidebar feed feed feed feed feed feed feed" "footer footer footer footer footer footer footer footer";}
     .sidebar {display:none;}
     .feed {padding-right:20px;}
     .login a {display:none;}
     .hamburger{display: block;}
 }
-@media only screen and (min-width: 1201px) {}
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
-
 a.post_submit {
     display: inline-block;
     padding: 0.35em 1.2em;
@@ -222,9 +179,7 @@ a.post_submit {
     color:#000000;
     background-color:#FFFFFF;
 }
-.submit_container div{
-    float: right;
-}
+.submit_container div{float: right;}
 @media all and (max-width:30em){
     a.post_submit{
     display:block;
